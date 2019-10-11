@@ -3,6 +3,8 @@
 int main(void)
 {
 
-  printf("hello,world\n");
+  printf("to C,or not to c\n");
+  printf("that is the question\n");
+  printf("crevity is the soul of wit.--Shakespeare\n");
   return 0;
-}
+}  
