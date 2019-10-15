@@ -7,4 +7,4 @@ int main(void)
   printf("that is the question\n");
   printf("crevity is the soul of wit.--Shakespeare\n");
   return 0;
-}  
+}  asm
