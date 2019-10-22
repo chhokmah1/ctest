@@ -1,11 +1,20 @@
-#include<stdio.h>
+#include <stdio.h>
+#include <math.h>
 int main(void)
-{
- int r;
- float volume;
-  r=3;
-  volume=r*r*r*4/3*3.14;
-  printf("volume=%f\n",volume);
-  return 0;
 
+{
+  float rice;
+  double power, high = 100, second = 3;
+  power = pow(second, 2);
+  rice = power * 1 / 2 * 10;
+
+  if (rice >= high)
+  {
+    printf("rice=%.2f\n", high);
+  }
+  else
+  {
+    printf("rice=%.2f\n", rice) ;
+  }
+  return 0;
 }
