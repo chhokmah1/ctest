@@ -1,0 +1,12 @@
+char ch //char 字符型变量函数名 ch为变量名
+scanf 中%c表示占位符
+scanf()输入表达式时，在操作数和运算符之间不能出现空格（' ')
+
+字符输入getchar()
+一般调用格式 ch=getchar()
+
+注意：getchar只能那个读入一个字符， 若读入多个字符则需要循环语句
+for(i=0,i<n,i++)
+{
+    ch=getchar(); //注意分号 
+}
