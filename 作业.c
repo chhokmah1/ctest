@@ -1,20 +1,34 @@
 #include <stdio.h>
-#include <math.h>
-int main(void)
-
+int main()
 {
-  float rice;
-  double power, high = 100, second = 3;
-  power = pow(second, 2);
-  rice = power * 1 / 2 * 10;
+  int a, b, c, d, sum;
+  double average;
+  printf("enter number");
+  scanf("%d%d%d%d", &a, &b, &c, &d);
+  sum = a + b + c + d;
+  average = sum / 4;
+  printf("sum=%d\naverage=%.1f", sum, average);
 
-  if (rice >= high)
-  {
-    printf("rice=%.2f\n", high);
-  }
-  else
-  {
-    printf("rice=%.2f\n", rice) ;
-  }
   return 0;
 }
+
+//n个数求和//
+
+// #include <stdio.h>
+// int main()
+// {
+//   int n, sum = 0, number, i;
+//   double average;
+//   printf("enter n=");
+//   scanf("%d", &n);
+//   i = n;
+//   for (; n > 0; n--)
+//   {
+//     printf("enter number=");
+//     scanf("%d", &number);
+//     sum += number;
+//   }
+//   average = sum / i;
+//   printf("sum =%d\naverage=%.1f\n", sum, average);
+//   return 0;
+// }
