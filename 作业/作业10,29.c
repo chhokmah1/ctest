@@ -11,7 +11,7 @@ int main()
   }
   else
   {
-    cost=0.53*50+0.25*(cost-50);
+    cost=0.53*50+0.58*(cost-50);
   }
   
   printf("your cost is %.2fyuan\n",cost);
