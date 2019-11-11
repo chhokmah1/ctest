@@ -2,7 +2,7 @@
 int main()
 {
     int n,i,grade;
-    printf("enter n");
+    printf("enter student number");
     scanf("%d",&n);
     for(i=0;i<n;i++)
     {
