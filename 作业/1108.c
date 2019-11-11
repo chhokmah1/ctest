@@ -12,19 +12,19 @@ int main()
       {
         printf("your grade is A\n");
       }
-      else if(grade>=80)
+      else if(grade<=100&&grade>=80)
       {
         printf("your grade is B\n");
       }
-      else if(grade>=70)
+      else if(grade<=100&&grade>=70)
       {
         printf("your grade is C\n");
       }
-      else if(grade>=60)
+      else if(grade<=100&&grade>=60)
       {
         printf("your grade is D\n");
       }
-      else if(grade>=0)
+      else if(grade<=100&&grade>=0)
       {
         printf("your grade is E\n");
       }
