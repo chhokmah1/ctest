@@ -1,0 +1,51 @@
+定义在函数内部的变量称为 局部变量
+
+int f1(int a){
+    int b,c;  //a,b,c仅在函数f1()内有效
+    return a+b+c;
+}
+int main(){
+    int m,n;  //m,n仅在函数main()内有效
+    return 0
+-----------------------------------
+在所有函数外部定义的变量称为 全局变量
+int a, b;  //全局变量
+void func1(){
+    //TODO:
+}
+float x,y;  //全局变量
+int func2(){
+    //TODO:
+}
+int main(){
+    //TODO:
+    return 0;
+}
+----------------------------------
+#include <stdio.h>
+int n = 10;  //全局变量
+void func1(){
+    int n = 20;  //局部变量
+    printf("func1 n: %d\n", n);
+}
+void func2(int n){
+    printf("func2 n: %d\n", n);
+}
+void func3(){
+    printf("func3 n: %d\n", n);
+}
+int main(){
+    int n = 30;  //局部变量
+    func1();
+    func2(n);
+    func3();
+    //代码块由{}包围
+    {
+        int n = 40;  //局部变量
+        printf("block n: %d\n", n);
+    }
+    printf("main n: %d\n", n);
+    return 0;
+}
+----------------------------------
+优先度 ： 局部>
