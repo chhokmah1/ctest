@@ -1,0 +1,39 @@
+
+#include<stdio.h> 中<>会检索系统文件
+#include"stdio.h"会检索当前文件夹中文件 ，再检索系统文件
+-----------------------------
+
+※ 头文件后缀.h 
+   系统or自定义头文件中只能有变量和声明函数，而不能定义函数
+
+   例子：
+   (01.h)(头文件)
+   {
+      int sum(int m, int n)   \\声明函数
+   }
+
+
+   (02.c)(源文件)   \\定义函数
+   {
+      int sum(int m, int n)
+      {
+          int i, sum = 0;
+    for (i = m; i <= n; i++) 
+        {
+        sum += i;
+        }
+    return sum;
+
+      }
+   }
+
+   (main.c)(源文件)    \\调用函数
+   {
+        #include <stdio.h>
+        #include "my.h"
+        int main() 
+        {
+        printf("%d\n", sum(1, 100));
+        return 0;
+        }
+   }
