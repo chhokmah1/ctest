@@ -1,30 +1,30 @@
 #include<stdio.h>
+#include<math.h>
 int main()
 {
-    int wait,max,i;
-    float cost,distance;
-    printf("enter your distance wait=");
-    scanf("%f,%f",&distance,&wait);
-    if(distance<=3)
+    int number,sum=0,term,n,i=1;
+    printf("enter number\n");
+    scanf("%d",&number);
+    i=number;
+    while (number>0)
+
     {
-        cost=10;
+        term=number%10;
+        sum+=pow(term,3);
+        number/=10;
     }
-    else if(distance>3&&distance<=13)
+       
+      
+
+   if (sum==i)
     {
-        cost=10+(distance-3)*2;
+        printf("YSE");
     }
-    else
+    else 
     {
-        cost=30+(distance-13)*3;
+        printf("NO");
     }
 
-    if(wait>5)
-    {
-       cost+=(wait/5)*2;
-    }
-    
-    cost+=0.5;
-    printf("cost is %dyuan",cost);
     return 0;
 
 }
