@@ -1,0 +1,14 @@
+我们将内存中字节的编号称为地址（Address）或指针（Pointer）
+
+定义指针变量 : datatype *name;
+           or datatype *name=value;
+ datatype(函数类型) 如int double 
+ name (函数名)
+ value(某个变量) 如&a(一定要带&)
+ 
+注意:定义时带* 赋值不用带*
+
+地址占位符  %#X
+-------------------------------------
+※  
+*p++等于*(p++)修改了指针的值使其不指向a
