@@ -2,7 +2,7 @@
 int main()
 {
     double chick;
-   int cock ,hen ,chick;
+   int cock ,hen ;
    for (cock=0;cock*5<=100;cock++)
    {
        for (hen=0;hen*3<=100;hen++)
