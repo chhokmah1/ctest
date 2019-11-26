@@ -1,0 +1,2 @@
+break 推出循坏
+continue 直接跳到循环末尾
